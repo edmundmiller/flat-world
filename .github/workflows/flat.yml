@@ -26,3 +26,8 @@ jobs:
         with:
           http_url: https://slack.com/api/team.billableInfo?token=$config['slack_access_token&pretty=1
           downloaded_filename: slack.json
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://api.github.com/repos/nf-core/methylseq/traffic/views
+          downloaded_filename: methylseq_views
