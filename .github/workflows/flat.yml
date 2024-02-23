@@ -21,6 +21,7 @@ jobs:
         with:
           http_url: https://api.github.com/repos/nf-core/methylseq/contributors
           downloaded_filename: methylseq_contributors.json
+          authorization: Bearer ${{ secrets.GITHUB_TOKEN }}
       # FIXME
       # - name: Fetch data
       #   uses: githubocto/flat@v3
@@ -32,3 +33,4 @@ jobs:
         with:
           http_url: https://api.github.com/repos/nf-core/methylseq/traffic/views
           downloaded_filename: methylseq_views.json
+          authorization: Bearer ${{ secrets.GITHUB_TOKEN }}
