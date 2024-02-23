@@ -20,7 +20,7 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: https://api.github.com/repos/nf-core/methylseq/stats/contributors
-          downloaded_filename: methylseq_contributors
+          downloaded_filename: methylseq_contributors.json
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
@@ -30,4 +30,4 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: https://api.github.com/repos/nf-core/methylseq/traffic/views
-          downloaded_filename: methylseq_views
+          downloaded_filename: methylseq_views.json
